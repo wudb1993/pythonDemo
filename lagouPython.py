@@ -75,11 +75,12 @@ def lagou(page,position):
         cursor.close()
         count=count+1
     db.close()
-def whileLagou(position):
+def main(position):
             page = 1
             while page<=30:
                 print('---------------------第',page,'页--------------------')
                 lagou(page,position)
                 page=page+1
 #输入你想要爬取的职位名,如:python
-whileLagou('c')
+if __name__ == '__main__':
+    main('c')
